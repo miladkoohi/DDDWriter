@@ -11,7 +11,7 @@ The project is organized into distinct modules, each representing a core archite
 - `shared`: Contains shared utilities and infrastructure components.
 
 ### Project Directory Layout
-
+```
 src
 ├── shared
 │ ├── domain
@@ -43,6 +43,7 @@ src
 │ └── response
 ├── user
 └── tests
+```
 
 ## Features
 
