@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.http import HttpRequest
 from django.urls import path
 from ninja import NinjaAPI
-from todo.presentation.rest.api import router as todo_router
+from blog.presentation.rest.api import router as blog_router
 from user.presentation.rest.api import router as user_router
 
 api = NinjaAPI(
@@ -16,7 +16,7 @@ def health_check(request: HttpRequest):
     return {"status": "ok"}
 
 
-api.add_router("blog/", todo_router)
+api.add_router("blog/", blog_router)
 api.add_router("users/", user_router)
 
 

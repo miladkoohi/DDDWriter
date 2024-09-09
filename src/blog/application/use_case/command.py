@@ -1,5 +1,5 @@
-from shared.domain.entity import BlogPost
-from shared.domain.exception import BlogPostValidationError
+from blog.domain.entity import BlogPost
+from blog.domain.exception import BlogPostValidationError
 
 class CreateBlogPostCommand:
     def __init__(self, title: str, content: str, author: str):

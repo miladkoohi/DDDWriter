@@ -35,13 +35,13 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "blog.infra.django.apps.BlogConfig",  # Updated to your app name
-    "user.infra.django.apps.UserConfig",
+    "blog.infrastructure.django.apps.BlogConfig",  # Updated to your app name
+    "user.infrastructure.django.apps.UserConfig",
 ]
 
 MIGRATION_MODULES = {
-    "blog": "blog.infra.database.migrations",
-    "user": "user.infra.database.migrations",
+    "blog": "blog.infrastructure.database.migrations",
+    "user": "user.infrastructure.database.migrations",
 }
 
 MIDDLEWARE = [
