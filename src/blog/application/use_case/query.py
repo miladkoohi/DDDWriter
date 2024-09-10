@@ -1,4 +1,4 @@
-from shared.domain.entity import BlogPost
+from blog.domain.entity import BlogPost
 
 class GetBlogPostQuery:
     def __init__(self, post_id: int):
